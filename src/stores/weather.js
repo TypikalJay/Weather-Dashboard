@@ -8,7 +8,9 @@ export const useWeatherStore = defineStore('weather', {
 
   actions: {
     async fetchWeather(city) {
-      const apiKey = import.meta.env.VITE_WEATHER_API_KEY
+      const apiKey =
+        import.meta.env.VITE_WEATHER_API_KEY || '7ddf76a2ac04648ca7a483fbd8c5bf7e'
+
 
       try {
         // --- CURRENT WEATHER

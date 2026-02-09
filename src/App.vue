@@ -23,7 +23,7 @@
           {{ weatherStore.currentWeather.weather[0].description }}
         </p>
         <p class="temp">
-          {{ weatherStore.currentWeather.main.temp }} °C
+          {{ weatherStore.currentWeather.main.temp }} &deg;C
         </p>
       </div>
 
@@ -35,7 +35,7 @@
             :key="index"
           >
             <span>{{ day.dt_txt }}</span>
-            <span>{{ day.main.temp }} °C</span>
+            <span>{{ day.main.temp }} &deg;C</span>
             <span>{{ day.weather[0].description }}</span>
           </li>
         </ul>
